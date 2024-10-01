@@ -1,0 +1,38 @@
+:root {
+    --valueH: 500px;
+    --valueW: 250px;
+}
+
+body,
+#game {
+    display: flex;
+    justify-content: center;
+}
+
+#display-game {
+    width: var(--valueW);
+    height: var(--valueH);
+    border: 1px solid #000;
+    background: #000;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+}
+
+#infor {
+    width: var(--valueW);
+    height: var(--valueH);
+    border: 1px solid #000;
+    background: white;
+}
+
+#next {
+    justify-self: end;
+    width: var(--valueW);
+    height: var(--valueH);
+    border: 1px solid #000;
+    background: blue;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
